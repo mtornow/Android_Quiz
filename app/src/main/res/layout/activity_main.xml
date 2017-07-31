@@ -1,18 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context="com.mtsum.android_quiz.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/testing_string"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/quiztime_header"
+            style="@style/headerStyle"
+            android:text="@string/quiztime" />
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/questionStyle"
+            android:layout_below="@id/quiztime_header"
+            android:text="@string/question" />
+
+        <LinearLayout
+            android:id="@+id/radiobutton_answer"
+            style="@style/answersWithButtonsLLStyle"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_answer"
+            style="@style/answersWithButtonsLLStyle"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answer4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edittext_answer"
+            style="@style/answersWithTextLLStyle"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/please_answer" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/buttonStyle"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+</ScrollView>
