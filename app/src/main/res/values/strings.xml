@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Android_Quiz</string>
-    <string name="testing_string">Test</string>
+    <string name="testing_string">TEsssST</string>
+    <string name="submit">"Submit</string>
+    <string name="quiztime">Quiz Time!</string>
+    <string name="question">TestQuestion</string>
+    <string name="answer1">Answer1</string>
+    <string name="answer2">Answer2</string>
+    <string name="answer3">Answer3</string>
+    <string name="answer4">Answer4</string>
+    <string name="please_answer">Please answer here!</string>
 </resources>
