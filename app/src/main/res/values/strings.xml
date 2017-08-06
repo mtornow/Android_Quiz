@@ -3,10 +3,14 @@
     <string name="testing_string">TEsssST</string>
     <string name="submit">"Submit</string>
     <string name="quiztime">Quiz Time!</string>
-    <string name="question">TestQuestion</string>
-    <string name="answer1">Answer1</string>
-    <string name="answer2">Answer2</string>
-    <string name="answer3">Answer3</string>
-    <string name="answer4">Answer4</string>
+    <string name="question">What is the name of this app ?</string>
+    <string name="question1_answer1">Answer1</string>
+    <string name="question1_answer2">Answer2</string>
+    <string name="question1_answer3">Answer3</string>
+    <string name="question1_answer4">Answer4</string>
+    <string name="question2_answer1">Answer1</string>
+    <string name="question2_answer2">Answer2</string>
+    <string name="question2_answer3">Answer3</string>
+    <string name="question2_answer4">Answer4</string>
     <string name="please_answer">Please answer here!</string>
 </resources>

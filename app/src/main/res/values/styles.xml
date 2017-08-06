@@ -41,7 +41,7 @@
 
     <!-- LinearLayout for Radiobutton and Checkbox Style -->
     <style name="answersWithButtonsLLStyle" parent="answersLLStyle">
-        <item name="layout_marginLeft">36dp</item>
+        <item name="android:layout_marginLeft">36dp</item>
     </style>
 
     <!-- LinearLayout for EditText Style -->

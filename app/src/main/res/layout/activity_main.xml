@@ -28,24 +28,28 @@
             android:visibility="invisible">
 
             <RadioButton
+                android:id="@+id/radio_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer1" />
+                android:text="@string/question1_answer1" />
 
             <RadioButton
+                android:id="@+id/radio_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer2" />
+                android:text="@string/question1_answer2" />
 
             <RadioButton
+                android:id="@+id/radio_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer3" />
+                android:text="@string/question1_answer3" />
 
             <RadioButton
+                android:id="@+id/radio_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer4" />
+                android:text="@string/question1_answer4" />
 
         </LinearLayout>
 
@@ -55,24 +59,28 @@
             android:visibility="invisible">
 
             <CheckBox
+                android:id="@+id/checkbox_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer1" />
+                android:text="@string/question2_answer1" />
 
             <CheckBox
+                android:id="@+id/checkbox_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer2" />
+                android:text="@string/question2_answer2" />
 
             <CheckBox
+                android:id="@+id/checkbox_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer3" />
+                android:text="@string/question2_answer3" />
 
             <CheckBox
+                android:id="@+id/checkbox_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/answer4" />
+                android:text="@string/question2_answer4" />
 
         </LinearLayout>
 
@@ -82,6 +90,7 @@
             android:visibility="visible">
 
             <EditText
+                android:id="@+id/edittext_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/please_answer" />
@@ -92,7 +101,8 @@
         <Button
             android:id="@+id/submit_button"
             style="@style/buttonStyle"
-            android:text="@string/submit" />
+            android:text="@string/submit"
+            android:onClick="SubmitAnswer"/>
 
     </RelativeLayout>
 </ScrollView>
